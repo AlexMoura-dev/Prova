@@ -21,22 +21,20 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.prova.R;
-import com.example.prova.ui.login.LoginViewModel;
-import com.example.prova.ui.login.LoginViewModelFactory;
-import com.example.prova.databinding.ActivityLogBinding;
+import com.example.prova.databinding.ActivityTelaLoginBinding;
+import com.example.prova.databinding.ActivityTelaLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
-    private ActivityLogBinding binding;
+    private ActivityTelaLoginBinding binding;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityLogBinding.inflate(getLayoutInflater());
+        binding = ActivityTelaLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())

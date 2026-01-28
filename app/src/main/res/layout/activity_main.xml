@@ -11,9 +11,19 @@
     <ImageView
         android:layout_width="500dp"
         android:layout_height="500dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/Logo"
         tools:layout_editor_absoluteX="-45dp"
-        tools:layout_editor_absoluteY="115dp" />
+        tools:layout_editor_absoluteY="115dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_irPag2"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="Ir para próxima página"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="521dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

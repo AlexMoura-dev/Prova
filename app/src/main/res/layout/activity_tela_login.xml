@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo"
+        android:src="@drawable/Logo"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-92dp" />
 
@@ -24,6 +24,7 @@
         tools:layout_editor_absoluteY="290dp" />
 
     <EditText
+        android:id="@+id/edtxt_usuario"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:hint="Usuário"
@@ -33,7 +34,7 @@
         />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtxt_senha"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:hint="Senha"

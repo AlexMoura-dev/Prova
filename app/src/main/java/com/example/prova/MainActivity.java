@@ -1,6 +1,9 @@
 package com.example.prova;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button btn_irPag2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +25,20 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btn_irPag2 = findViewById(R.id.btn_irPag2);
+
+        btn_irPag2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        MainActivity.this,
+                        tela_login.class
+                );
+
+                startActivity(intent);
+            }
+        });
+
     }
 }
